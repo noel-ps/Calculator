@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:paddingRight="30dp"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:gravity="center_vertical"
+             android:textColor="@color/white"
+             android:text=""
+             android:layout_gravity="end"
+             android:textAlignment="textEnd"
+             android:textSize="30sp"
+             android:id="@+id/solution_tv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingRight="30dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="0"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:textSize="45sp"
+            android:id="@+id/result_tv"/>
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "36dp"
+                android:textColor="@color/white"
+                android:text="@string/c"
+                android:id="@+id/button_c"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="("
+                android:id="@+id/button_open_bracket"
+                tools:ignore="HardcodedText" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text=")"
+                android:id="@+id/button_close_bracket"
+                tools:ignore="HardcodedText" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:id="@+id/button_divide"
+                android:text="/"
+                tools:ignore="HardcodedText"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="7"
+                android:id="@+id/button_7"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="8"
+                android:id="@+id/button_8"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="9"
+                android:id="@+id/button_9"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/orange"
+                android:text="*"
+                android:id="@+id/button_multiply"
+                tools:ignore="HardcodedText"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="4"
+                android:id="@+id/button_4"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="5"
+                android:id="@+id/button_5"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="6"
+                android:id="@+id/button_6"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/orange"
+                android:id="@+id/button_minus"
+                android:text="-"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="1"
+                android:id="@+id/button_1"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="2"
+                android:id="@+id/button_2"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:text="3"
+                android:id="@+id/button_3"
+                tools:ignore="HardcodedText"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/orange"
+                android:text="+"
+                android:id="@+id/button_add"
+                tools:ignore="HardcodedText"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:id="@+id/button_ac"
+                android:text="AC"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:id="@+id/button_0"
+                android:text="0"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:background="@null"
+                app:backgroundTint = "@null"
+                app:cornerRadius = "0dp"
+                android:textColor="@color/white"
+                android:id="@+id/button_dot"
+                android:text="."/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="40sp"
+                app:cornerRadius = "3dp"
+                android:textColor="@color/white"
+                android:id="@+id/button_equal"
+                android:text="@string/equal"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>

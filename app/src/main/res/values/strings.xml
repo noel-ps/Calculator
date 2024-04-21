@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="c">C</string>
+    <string name="n">()</string>
+    <string name="brackets">()</string>
+    <string name="equal">=</string>
+</resources>
